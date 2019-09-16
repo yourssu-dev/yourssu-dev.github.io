@@ -93,8 +93,8 @@ article.single section,
 }
 
 header, footer {
-  background-color: #393939;
-  background-color: var(--base01);
+  /*background-color: #393939;*/
+  /*background-color: var(--base01);*/
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -102,6 +102,10 @@ header, footer {
 header {
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+
+header a{
+  text-decoration: none;
 }
 
 @media (--breakpoint-md) {
