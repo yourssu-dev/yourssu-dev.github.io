@@ -39,7 +39,8 @@
 @custom-media --breakpoint-md (max-width: 52em);
 
 /* General Page Layout */
-
+/*:lang(ko) {font-family:'nanum gothic', sans-serif}
+:lang(en) {font-family: 'Source Code Pro', monospace;}*/
 body {
   margin: 0;
   background-color: #2d2d2d;
@@ -48,7 +49,7 @@ body {
   color: var(--base07);
   line-height: 1.5;
   font-size: 100%;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Code Pro','Nanum Gothic';
 }
 
 .container {
@@ -208,7 +209,7 @@ footer a {
 
 .homepage h1.site-title {
   text-align: center;
-  font-size: 5em;
+  font-size: 4em;
   color: #66cccc;
   color: var(--base0c);
 }
