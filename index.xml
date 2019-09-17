@@ -6,10 +6,19 @@
     <description>Recent content on Yourssu Dev Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 17 Sep 2019 00:25:34 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2019 13:52:21 +0900</lastBuildDate>
     
 	<atom:link href="https://yourssu-dev.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://yourssu-dev.github.io/post/test/</link>
+      <pubDate>Tue, 17 Sep 2019 13:52:21 +0900</pubDate>
+      
+      <guid>https://yourssu-dev.github.io/post/test/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>유어슈 기술 블로그 첫 개시!</title>
@@ -17,9 +26,11 @@
       <pubDate>Tue, 17 Sep 2019 00:25:34 +0900</pubDate>
       
       <guid>https://yourssu-dev.github.io/post/new-first/</guid>
-      <description>안녕하세요! 기술 블로그 개발 담당 Margarets 입니다!!
-기술 블로그의 틀이 드디어 잡혀 테스트 글을 쓰고 있어용~^_^
-이모지 기능 또한 제공 되고 있어요!</description>
+      <description>유어슈의 첫 게시글 + 마크다운 가이드 글이에요! 휴고 base 16 테마를 사용했어요, 지금 이 문단은 &amp;lt;p태그를 사용중이에요! 헤더파일 html의 6가지 &amp;lt;h1&amp;gt;—&amp;lt;h6&amp;gt; 태그들을 지원하고 있어요. &amp;lt;h1&amp;gt; 에서 &amp;lt;h6&amp;gt; 까지 사용할 수 있답니다.
+H1 H2 H3 H4 H5 H6 Paragraph 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+p태그를 한번 더 사용할 경우 주어지는 간격입니다
+Blockquotes(인용문) 글을 예쁘게 표현할때 필요한 태그입니다
+인용문 안에도 마크다운을 사용할 수 있어요!</description>
     </item>
     
   </channel>

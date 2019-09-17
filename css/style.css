@@ -38,6 +38,7 @@
 
 @custom-media --breakpoint-md (max-width: 52em);
 
+
 /* General Page Layout */
 /*:lang(ko) {font-family:'nanum gothic', sans-serif}
 :lang(en) {font-family: 'Source Code Pro', monospace;}*/
@@ -65,7 +66,41 @@ div.right {
 div.clearfix {
   overflow: auto;
 }
-
+.clearfix h1{
+  border-right: .1em solid #d2cfc7;
+  font-family: "Courier";
+  white-space: nowrap;
+  overflow: hidden;
+  width: 12.3em;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(20, end), blink .8s step-end infinite alternate;
+  animation: type3 1.8s steps(20, end), blink .8s step-end infinite alternate;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
 @media (--breakpoint-md) {
   .container {
     width: 100%;
@@ -106,6 +141,10 @@ header {
 
 header a{
   text-decoration: none;
+}
+
+.homepage h1.headline{
+  font-size: 1em;
 }
 
 @media (--breakpoint-md) {
