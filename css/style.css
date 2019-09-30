@@ -45,7 +45,7 @@
 body {
   margin: 0;
   background-color: #2d2d2d;
-  background-color: var(--base00);
+  background-color: var(--base07);
   color: #f2f0ec;
   color: var(--base07);
   line-height: 1.5;
@@ -110,7 +110,7 @@ div.clearfix {
 article.single section,
 .article-list article {
   background-color: #f2f0ec;
-  background-color: var(--base07);
+  background-color: #FAFAFA;
   color: #2d2d2d;
   color: var(--base00);
   padding-left: 8rem;
@@ -264,9 +264,9 @@ footer a {
 }
 
 .homepage h1.headline {
-  font-size: 3em;
+  font-size: 1.7em;
   color: #ffcc66;
-  color: var(--base0a);
+  color: var(--base02);
 }
 
 @media (--breakpoint-md) {
@@ -291,7 +291,7 @@ footer a {
 .homepage .tag,
 .homepage .tag a {
   color: #cc99cc;
-  color: var(--base0e);
+  color: var(--base03);
 }
 
 .homepage .tag {
@@ -302,23 +302,31 @@ footer a {
 
 .article-list h1.list-title {
   font-size: 3em;
-  color: #ffcc66;
-  color: var(--base0a);
+  /*color: #ffcc66;*/
+  color: var(--base07);
+  text-decoration: none;
 }
 
 .article-list article {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  font-size: 0.8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-bottom: 4rem;
+  box-shadow: 4px 4px 6px gray;
+  border-radius: 5px;
 }
 
 .article-list article h2.headline,
 .article-list article h2.headline a {
   margin-top: 0;
   color: #6699cc;
-  color: var(--base0d);
+  color: var(--base02);
+  text-decoration: none;
+  font-size: 1.3rem;
 }
-
+.article-list article .key_author{
+  font-size: 0.4em;
+}
 .article-list article .meta {
   margin-bottom: 1rem;
 }
@@ -388,7 +396,7 @@ article.single .meta .val, article.single .meta .val a {
 
 article.single h1.headline {
   margin-top: 0;
-  font-size: 3em;
+  font-size: 2em;
   color: #ffcc66;
   color: var(--base0a);
 }

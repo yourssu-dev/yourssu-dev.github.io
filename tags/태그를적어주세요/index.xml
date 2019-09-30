@@ -6,18 +6,18 @@
     <description>Recent content in 태그를적어주세요 on Yourssu Dev Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 17 Sep 2019 13:52:21 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2019 20:35:04 +0900</lastBuildDate>
     
 	<atom:link href="https://yourssu-dev.github.io/tags/%ED%83%9C%EA%B7%B8%EB%A5%BC%EC%A0%81%EC%96%B4%EC%A3%BC%EC%84%B8%EC%9A%94/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Test</title>
-      <link>https://yourssu-dev.github.io/post/test/</link>
-      <pubDate>Tue, 17 Sep 2019 13:52:21 +0900</pubDate>
+      <title>Margarets</title>
+      <link>https://yourssu-dev.github.io/developer/margarets/</link>
+      <pubDate>Tue, 17 Sep 2019 20:35:04 +0900</pubDate>
       
-      <guid>https://yourssu-dev.github.io/post/test/</guid>
-      <description></description>
+      <guid>https://yourssu-dev.github.io/developer/margarets/</guid>
+      <description>&amp;lt;!&amp;ndash;title : 글 제목 date : 알아서 올라감 draft : 글 비공개 상태 (true일 경우 비공개) categories : 카테고리 tags : 태그 author: 글쓴이</description>
     </item>
     
   </channel>
