@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Yourssu Dev Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 17 Sep 2019 00:25:34 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 03 Oct 2019 21:34:08 +0900</lastBuildDate>
     
 	<atom:link href="https://yourssu-dev.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hi</title>
+      <link>https://yourssu-dev.github.io/post/hi/</link>
+      <pubDate>Thu, 03 Oct 2019 21:34:08 +0900</pubDate>
+      
+      <guid>https://yourssu-dev.github.io/post/hi/</guid>
+      <description>dddd&amp;lt;/p</description>
+    </item>
     
     <item>
       <title>유어슈 기술 블로그 첫 개시!</title>
