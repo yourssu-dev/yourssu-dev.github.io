@@ -20,5 +20,14 @@
       <description>유어슈의 첫 게시글 + 마크다운 가이드 글이에요! 휴고 base 16 테마를 사용했어요, 지금 이 문단은 &amp;lt;p태그를 사용중이에요! 헤더파일 html의 6가지 &amp;lt;h1&amp;gt;—&amp;lt;h6&amp;gt; 태그들을 지원하고 있어요. &amp;lt;h1&amp;gt; 에서 &amp;lt;h6&amp;gt; 까지 사용할 수 있답니다.</description>
     </item>
     
+    <item>
+      <title>왜 아무도 글을 안올리죠?ㅠㅠ</title>
+      <link>https://yourssu-dev.github.io/post/first-hugo-most/</link>
+      <pubDate>Tue, 17 Sep 2019 00:02:29 +0900</pubDate>
+      
+      <guid>https://yourssu-dev.github.io/post/first-hugo-most/</guid>
+      <description>글이 풍성해질때 까지 못지웁니다..</description>
+    </item>
+    
   </channel>
 </rss>
