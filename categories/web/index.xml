@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>web on Yourssu Dev Blog</title>
+    <title>web on Yourssu ���� ���α�</title>
     <link>https://yourssu-dev.github.io/categories/web/</link>
-    <description>Recent content in web on Yourssu Dev Blog</description>
+    <description>Recent content in web on Yourssu ���� ���α�</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <lastBuildDate>Thu, 03 Oct 2019 21:34:08 +0900</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Thu, 03 Oct 2019 21:34:08 +0900</pubDate>
       
       <guid>https://yourssu-dev.github.io/post/hi/</guid>
-      <description>dddd&amp;lt;/p</description>
+      <description>dddd</description>
     </item>
     
     <item>
@@ -26,7 +26,11 @@
       <pubDate>Tue, 17 Sep 2019 00:25:34 +0900</pubDate>
       
       <guid>https://yourssu-dev.github.io/post/new-first/</guid>
-      <description>유어슈의 첫 게시글 + 마크다운 가이드 글이에요! 휴고 base 16 테마를 사용했어요, 지금 이 문단은 &amp;lt;p태그를 사용중이에요! 헤더파일 html의 6가지 &amp;lt;h1&amp;gt;—&amp;lt;h6&amp;gt; 태그들을 지원하고 있어요. &amp;lt;h1&amp;gt; 에서 &amp;lt;h6&amp;gt; 까지 사용할 수 있답니다.</description>
+      <description>유어슈의 첫 게시글 + 마크다운 가이드 글이에요! 휴고 base 16 테마를 사용했어요, 지금 이 문단은 &amp;lt;p태그를 사용중이에요! 헤더파일 html의 6가지 &amp;lt;h1&amp;gt;—&amp;lt;h6&amp;gt; 태그들을 지원하고 있어요. &amp;lt;h1&amp;gt; 에서 &amp;lt;h6&amp;gt; 까지 사용할 수 있답니다.
+H1 H2 H3 H4 H5 H6 Paragraph 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+p태그를 한번 더 사용할 경우 주어지는 간격입니다
+Blockquotes(인용문) 글을 예쁘게 표현할때 필요한 태그입니다
+인용문 안에도 마크다운을 사용할 수 있어요!</description>
     </item>
     
   </channel>

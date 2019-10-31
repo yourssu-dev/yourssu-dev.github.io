@@ -53,11 +53,6 @@
   </url>
   
   <url>
-    <loc>https://yourssu-dev.github.io/author/</loc>
-    <lastmod>2019-09-17T20:35:04+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://yourssu-dev.github.io/developer/</loc>
     <lastmod>2019-09-17T20:35:04+09:00</lastmod>
   </url>
@@ -68,18 +63,8 @@
   </url>
   
   <url>
-    <loc>https://yourssu-dev.github.io/author/%EB%8B%89%EB%84%A4%EC%9E%84%EC%9D%84-%EC%A0%81%EC%96%B4%EC%A3%BC%EC%84%B8%EC%9A%94%EC%98%81%EC%96%B4/</loc>
-    <lastmod>2019-09-17T20:35:04+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://yourssu-dev.github.io/tags/%ED%83%9C%EA%B7%B8%EB%A5%BC%EC%A0%81%EC%96%B4%EC%A3%BC%EC%84%B8%EC%9A%94/</loc>
     <lastmod>2019-09-17T20:35:04+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yourssu-dev.github.io/author/margarets/</loc>
-    <lastmod>2019-09-17T00:25:34+09:00</lastmod>
   </url>
   
   <url>
@@ -90,10 +75,6 @@
   <url>
     <loc>https://yourssu-dev.github.io/post/first-hugo-most/</loc>
     <lastmod>2019-09-17T00:02:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yourssu-dev.github.io/developers/</loc>
   </url>
   
 </urlset>
