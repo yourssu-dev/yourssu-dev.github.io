@@ -1,19 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://yourssu-dev.github.io/categories/</loc>
-    <lastmod>2019-11-15T01:28:41+09:00</lastmod>
+    <lastmod>2019-11-17T01:10:26+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yourssu-dev.github.io/tags/cloud-computing/</loc>
-    <lastmod>2019-11-15T01:28:41+09:00</lastmod>
+    <loc>https://yourssu-dev.github.io/tags/ios/</loc>
+    <lastmod>2019-11-17T01:10:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourssu-dev.github.io/categories/ios/</loc>
+    <lastmod>2019-11-17T01:10:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourssu-dev.github.io/post/ios-tdd-start1/</loc>
+    <lastmod>2019-11-17T01:10:26+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://yourssu-dev.github.io/post/</loc>
+    <lastmod>2019-11-17T01:10:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourssu-dev.github.io/tags/</loc>
+    <lastmod>2019-11-17T01:10:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourssu-dev.github.io/</loc>
+    <lastmod>2019-11-17T01:10:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourssu-dev.github.io/tags/cloud-computing/</loc>
     <lastmod>2019-11-15T01:28:41+09:00</lastmod>
   </url>
   
@@ -33,16 +58,6 @@
   </url>
   
   <url>
-    <loc>https://yourssu-dev.github.io/tags/</loc>
-    <lastmod>2019-11-15T01:28:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yourssu-dev.github.io/</loc>
-    <lastmod>2019-11-15T01:28:41+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://yourssu-dev.github.io/tags/%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4/</loc>
     <lastmod>2019-11-15T01:28:41+09:00</lastmod>
   </url>
@@ -53,12 +68,12 @@
   </url>
   
   <url>
-    <loc>https://yourssu-dev.github.io/categories/reactive-programming/</loc>
+    <loc>https://yourssu-dev.github.io/tags/reactive-programming/</loc>
     <lastmod>2019-11-11T15:31:24+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yourssu-dev.github.io/tags/reactive-programming/</loc>
+    <loc>https://yourssu-dev.github.io/categories/reactive-programming/</loc>
     <lastmod>2019-11-11T15:31:24+09:00</lastmod>
   </url>
   
