@@ -10,12 +10,20 @@ script:
   # - cd public
   # - ls
   - chmod +x ./deploy.sh
+
 deploy:
   - provider: script
     script: ./deploy.sh
     skip_cleanup: true
     on:
       branch: develop
+
+# git add -A
+# git status
+# git commit -m "Deleted A, B, C"
+# git push
+
+
 
 # deploy:
 #   local_dir: public # hugo 에서 기본 output폴더 명은 public 임으로 deploy 할 폴더를 public 으로 설정 해 놓는다

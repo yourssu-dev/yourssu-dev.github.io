@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\033[0;32m깃허브로 디플로잉 중 '3'...\033[0m"
+echo -e "\033[0;32m깃허브로 디플로잉 중...\033[0m"
 
 cd public
 
@@ -17,5 +17,4 @@ fi
 
 git add .
 git commit -m "글 갱신.."
-ls
-# git push --force origin HEAD:master
+git push --force origin HEAD:master
