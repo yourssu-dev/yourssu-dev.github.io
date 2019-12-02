@@ -7,12 +7,13 @@ script:
   - git clone https://github.com/digitalcraftsman/hugo-minimalist-theme
   - cd ..
   - hugo
+  - ls
 deploy:
   - provider: script
     script: ./deploy.sh
     skip_cleanup: true
     on:
-      branch: master
+      branch: develop
 
 # deploy:
 #   local_dir: public # hugo 에서 기본 output폴더 명은 public 임으로 deploy 할 폴더를 public 으로 설정 해 놓는다
