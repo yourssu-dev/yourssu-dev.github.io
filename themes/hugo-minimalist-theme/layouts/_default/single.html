@@ -1,0 +1,21 @@
+{{ partial "header" . }}
+
+<div class="container clearfix">
+    <main role="main" class="content">
+        <article class="post">
+            <a class="btn home" href="{{ .Site.BaseURL }}" title="{{ .Site.Data.l10n.article.back_to_home }}">&laquo; {{ .Site.Data.l10n.article.back_to_home }}</a>
+            {{ partial "article-header" . }}
+            {{ .Content}}
+            {{ partial "article-share" . }}
+        </article>
+        {{ if .Site.DisqusShortname }}
+        <div class="comments">
+            <h3>{{ .Site.Data.l10n.comments.comments }}</h3>
+            {{ template "_internal/disqus.html" . }}
+        </div>
+        {{ end }}
+    </main>
+    {{ partial "author" . }}
+</div>
+
+{{ partial "footer" . }}
