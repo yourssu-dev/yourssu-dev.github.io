@@ -1,0 +1,28 @@
+language: go
+go:
+  - master # go 언어의 마지막 버전
+
+install:
+  - go get github.com/spf13/hugo #정적 웹 사이트를 빌드하기 위한 hugo 설치
+
+script:
+  - hugo # hugo 커맨드를 실행하여 정적 웹사이트를 빌드
+
+deploy:
+  - provider: script
+    script: ./deploy.sh
+    skip_cleanup: true
+    on:
+      branch: master
+
+# deploy:
+#   local_dir: public # hugo 에서 기본 output폴더 명은 public 임으로 deploy 할 폴더를 public 으로 설정 해 놓는다
+#   repo: yourssu-dev/yourssu-dev.github.io # 배포될 저장소
+#   target_branch: master
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN # Travis CI 가 깃허브에 직접 업로드 하기위한 토큰
+#   email: yourssu.dev@gmail.com
+#   name: "yourssu.dev"
+#   on:
+#     branch: master
