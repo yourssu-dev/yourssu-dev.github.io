@@ -1,6 +1,6 @@
 baseurl = "https://yourssu-dev.github.io/"
 languageCode = "ko"
-title = "Yourssu ±â¼ú ºí·Î±×"
+title = "Yourssu ê¸°ìˆ  ë¸”ë¡œê·¸"
 # Define how many pages appear per site
 paginate = 10
 # Enable comments powered by Disqus by entering your disqus shortname
