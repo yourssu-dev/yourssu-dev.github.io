@@ -1,12 +1,9 @@
-language: go
-go:
-  - master # go 언어의 마지막 버전
-
 install:
-  - go get github.com/spf13/hugo #정적 웹 사이트를 빌드하기 위한 hugo 설치
-
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.60.1/hugo_0.60.1_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+    - hugo version
 script:
-  - hugo # hugo 커맨드를 실행하여 정적 웹사이트를 빌드
+  - hugo
 
 deploy:
   - provider: script
