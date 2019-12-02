@@ -12,6 +12,9 @@ theme = "hugo-minimalist-theme"
 # It allows you to preview the theme within the exampleSite folder
 # with the hugo server command
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
     site_author = "Yourssu_Developer"
     site_description = "The awesome blog of John Doe."
