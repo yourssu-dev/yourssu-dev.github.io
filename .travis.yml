@@ -3,8 +3,10 @@ install:
     - sudo dpkg -i hugo*.deb
     - hugo version
 script:
+  - cd themes
+  - git clone https://github.com/digitalcraftsman/hugo-minimalist-theme
+  - cd ..
   - hugo
-
 deploy:
   - provider: script
     script: ./deploy.sh
