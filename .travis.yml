@@ -7,16 +7,18 @@ script:
   - git clone https://github.com/digitalcraftsman/hugo-minimalist-theme
   - cd ..
   - hugo
-  # - cd public
-  # - ls
-  - chmod +x ./deploy.sh
 
 deploy:
-  - provider: script
-    script: ./deploy.sh
-    skip_cleanup: true
-    on:
-      branch: develop
+  local_dir: public
+  repo: yourssu-dev/yourssu-dev.github.io # 배포될 저장소
+  target_branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Travis CI 가 깃허브에 직접 업로드 하기위한 토큰
+  email: yourssu.dev@gmail.com
+  name: "yourssu.dev"
+  on:
+    branch: develop
 
 # git add -A
 # git status
