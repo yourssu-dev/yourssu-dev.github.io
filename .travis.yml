@@ -7,8 +7,9 @@ script:
   - git clone https://github.com/digitalcraftsman/hugo-minimalist-theme
   - cd ..
   - hugo
-  - cd public
-  - ls
+  # - cd public
+  # - ls
+  - chmod +x ./deploy.sh
 deploy:
   - provider: script
     script: ./deploy.sh
