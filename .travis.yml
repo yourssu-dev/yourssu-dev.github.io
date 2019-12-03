@@ -13,7 +13,7 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # Travis CI 가 깃허브에 직접 업로드 하기위한 토큰
   email: yourssu.dev@gmail.com
-  name: "yourssu.dev"
+  name: "yourssu-dev"
   commit_message: "유어슈 블로그에 글을 업데이트 합니다..."
   on:
     branch: develop
