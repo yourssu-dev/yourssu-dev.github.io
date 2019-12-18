@@ -30,4 +30,8 @@
 <li><a href="//plus.google.com/+{{.}}" class="icon-gplus" target="_blank" title="Google+"></a></li>
 {{ end }}
 
+{{ with .Site.Social.homepage }}
+<li><a href="//{{.}}" class="icon-dribbble" target="_blank" title="hompage"></a></li>
+{{ end }}
+
 <li><a href="{{ .Site.BaseURL }}post/index.xml" class="icon-rss" target="_blank" title="RSS"></a></li>

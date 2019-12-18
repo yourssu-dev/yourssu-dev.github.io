@@ -16,9 +16,9 @@ theme = "hugo-minimalist-theme"
 unsafe = true
 
 [params]
-    site_author = "Yourssu_Developer"
-    site_description = "The awesome blog of John Doe."
-    location = "Soongsil University"
+    site_author = "유어슈"
+    site_description = "Yourssu Development blog "
+    location = "숭실대학교 커뮤니티 그라운드 런칭!"
     # Link custom assets relative to /static
     avatar = "img/profile-image.png"
     header_background = "img/desk.jpg"
@@ -37,11 +37,12 @@ unsafe = true
     # Add your social network accounts to the profile section on the left
     # by entering your username. The links to your account will be
     # create automatically.
-    twitter   = "spf13"
+    twitter   = ""
     facebook  = ""
     linkedin  = ""
     behance   = ""
     dribbble  = ""
-    instagram = ""
-    github    = "digitalcraftsman"
+    instagram = "ground_yourssu"
+    github    = ""
     gplus     = ""
+    homepage  = "yourssu.com"

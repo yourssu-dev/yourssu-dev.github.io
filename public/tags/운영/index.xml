@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>운영 on Yourssu 기술 블로그</title>
+    <link>https://yourssu-dev.github.io/tags/%EC%9A%B4%EC%98%81/</link>
+    <description>Recent content in 운영 on Yourssu 기술 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 10 Dec 2019 13:36:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://yourssu-dev.github.io/tags/%EC%9A%B4%EC%98%81/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>안녕하세요. 테스트 문서 적어봅니다. </title>
+      <link>https://yourssu-dev.github.io/post/0gs-test/</link>
+      <pubDate>Tue, 10 Dec 2019 13:36:00 +0900</pubDate>
+      
+      <guid>https://yourssu-dev.github.io/post/0gs-test/</guid>
+      <description> 안녕하세요.
+제목입니다. 쪼끄만 제목입니다. 더 쪼그맙니다 엄청 쪼끄맙니다. 0g 도 기술블로그 이제 쓸 수 있따!! 핳
+# 신형 문자열 포맷팅 name = &amp;quot;0g&amp;quot; age = 23 height = 158.60 # print(&amp;quot;이름:{} 나이:{} 키 :{}&amp;quot; .format(name, age, height)) # console: 이름: 0g 나이: 23 키: 158.6  </description>
+    </item>
+    
+  </channel>
+</rss>

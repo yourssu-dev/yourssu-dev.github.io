@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Yourssu 기술 블로그</title>
+    <link>https://yourssu-dev.github.io/categories/android/</link>
+    <description>Recent content in Android on Yourssu 기술 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sat, 07 Dec 2019 04:03:04 +0900</lastBuildDate>
+    
+	<atom:link href="https://yourssu-dev.github.io/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>실제코드로 알아보는 dagger</title>
+      <link>https://yourssu-dev.github.io/post/%EC%8B%A4%EC%A0%9C%EC%BD%94%EB%93%9C%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-dagger/</link>
+      <pubDate>Sat, 07 Dec 2019 04:03:04 +0900</pubDate>
+      
+      <guid>https://yourssu-dev.github.io/post/%EC%8B%A4%EC%A0%9C%EC%BD%94%EB%93%9C%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-dagger/</guid>
+      <description>실제코드로 알아보는 dagger 유어슈에서 안드로이드 개발을 하고 있는 박정현입니다 오늘은 Android에서 DI(dependence injection) 문제를 해결하기 위해 가장 많이 쓰이고 있는 dagger2에 대해 보다 쉽게 알아보겠습니다
+처음 안드로이드 개발을 시작하는 분들은 dagger의 필요성을 인식하지 못하는 것 같습니다 사실 저도 그런 사람들 중에 한명이었습니다 하지만 항상 극한의 상황을 생각해야 하는 프로그래머의 현실;;
+사실 어느정도 규모의 어플을 개발하다 보면 의존성 문제라는 것에 직면하게 되는 시기가 찾아오는 것 같습니다
+하지만 dagger 혼자 시작하기도 힘들고 개념이나 사용법을 공부한다 하더라고 막상 어떻게 적용해야 할지 막막한 것이 현실입니다 저도 이해하는데 너무나 오래 걸렸고 사실 지금도 제대로 이해했는지 확신이 들지 않을 정도로 러닝커브가 긴 기술인것 같습니다</description>
+    </item>
+    
+  </channel>
+</rss>

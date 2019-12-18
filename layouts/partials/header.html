@@ -12,7 +12,7 @@
         <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
         <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
         {{ end }}
-        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ "css/styles.css" | absURL }}">
         <link rel="icon" href="{{ "favicon.ico" | absURL }}">
         <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}" />
@@ -39,8 +39,9 @@
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
         <header class="site-header">
           <div class="transparent-layer">
-              <a href=""><img src= "{{ .Site.Params.header_title | absURL }}" alt="LOGO" class = "Logo_img"></a>
+              <a href="{{ .Site.BaseURL }}"><img src= "{{ .Site.Params.header_title | absURL }}" alt="LOGO" class = "Logo_img"></a>
           </div>
         </header>

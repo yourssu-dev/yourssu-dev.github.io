@@ -1,0 +1,225 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Yourssu 기술 블로그</title>
+        <meta name="author">
+        <meta name="description" content="Yourssu Development blog ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="Hugo 0.58.2" />
+        
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://yourssu-dev.github.io/css/styles.css">
+        <link rel="icon" href="https://yourssu-dev.github.io/favicon.ico">
+        <link rel="apple-touch-icon" href="https://yourssu-dev.github.io/apple-touch-icon.png" />
+        <link rel="stylesheet" href="https://yourssu-dev.github.io/css/highlightjs/monokai.css">
+        <script src="https://yourssu-dev.github.io/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+        <style>
+        .site-header h2 .logo {
+        background: url(https://yourssu-dev.github.io/img/desk.jpg) no-repeat 0 0;
+        }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .site-header h2 .logo {
+            background-image: url(https://yourssu-dev.github.io/img/desk.jpg);
+        }}
+       .site-header {
+         background: #2a373d url(https://yourssu-dev.github.io/img/desk.jpg) no-repeat center center;
+         z-index: -1;
+        }
+        </style>
+    </head>
+    <body>
+        
+        
+        <header class="site-header">
+          <div class="transparent-layer">
+              <a href="https://yourssu-dev.github.io/"><img src= "https://yourssu-dev.github.io/img/LOGO.png" alt="LOGO" class = "Logo_img"></a>
+          </div>
+        </header>
+
+<div class="container clearfix">
+    <main role="main" class="content">
+        <article class="post">
+            <a class="btn home" href="https://yourssu-dev.github.io/" title="돌아가기">&laquo; 돌아가기</a>
+            
+<h1><a href="https://yourssu-dev.github.io/post/serverless-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90-%EA%B0%84%EB%8B%A8-%ED%9B%84%EA%B8%B0/" title="Serverless 아키텍쳐 간단 후기">Serverless 아키텍쳐 간단 후기</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2019.11.15">2019.11.15</time>
+
+    &middot; Tagged in
+        
+        <a href="https://yourssu-dev.github.io/tags/serverless">serverless</a>, 
+        
+        <a href="https://yourssu-dev.github.io/tags/cloud-computing">cloud computing</a>, 
+        
+        <a href="https://yourssu-dev.github.io/tags/%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4">서버리스</a>
+        
+    
+
+</span>
+</footer>
+
+            
+
+<h1 id="서버리스란">서버리스란</h1>
+
+<p>서버리스란 개발자가 서버 하드웨어를 관리할 필요 없이 코드에만 집중할 수 있는 아키텍쳐입니다. 서버리스를 사용하여 개발자는 기능을 함수 단위로 쪼개 마이크로서비스로 운영할 수 있습니다.</p>
+
+<p>서버리스는 Backend As A Service(BAAS)와 Function As A Service(FAAS)를 총칭하는 용어입니다. BAAS의 대표적인 예로는 Google Firebase가 있으며, FAAS로는 Azure Functions, AWS Lambda 등이 있습니다.</p>
+
+<h1 id="왜-서버리스를-선택했는가">왜 서버리스를 선택했는가</h1>
+
+<p>예전에는 간단한 프로젝트라도 AWS EC2와 같은 가상 머신에 서버를 배포했었습니다. 하지만 이러한 가상 머신은 사용 시간에 따라 가격이 책정됐기 때문에, 저같은 학생 입장에서 부담스러웠습니다. 또한, 타인에게 실제 서비스를 제공할 때 내가 직접 서버를 관리한다는게 뭔가 모르게 불안하기도 했습니다.</p>
+
+<p>반면 서버리스는 접속 수와 실행 시간에 따라 요금이 청구됩니다. 요청 수가 별로 없으며 복잡한 계산이 없는 소규모 서비스에서 더할 나위 없이 좋은 서비스입니다. 게다가 AWS기준 한달에 요청 횟수가 백만 번 이하일 경우 플랫폼을 무료로 제공합니다. 제가 운영하는 소규모 서비스는 보통 한달 총 요청 횟수가 많아야 2만~3만번 정도이니 <strong>서버리스를 사용하면 무료로 이용할 수 있는 것입니다.</strong></p>
+
+<p>또한 플랫폼 제공사에서 서버를 관리하고, 거기에 데이터베이스나 로그도 제공하기 때문에, 구축 과정에서 혹시나 모를 실수를 했을까 걱정할 필요도 없고 구축 작업에 비교적 오랜 시간을 쏟을 필요가 없게 되었습니다.</p>
+
+<p><strong>서버리스의 특징</strong></p>
+
+<ul>
+<li>비용이 덜 들음.</li>
+<li>서버 컴퓨터를 관리할 필요가 없음.</li>
+<li>접속자가 적은 소규모 서비스의 경우 비용을 획기적으로 절감할 수 있음.</li>
+</ul>
+
+<h1 id="개인적으로-느낀-각-플랫폼별-특징"><em>개인적으로</em> 느낀 각 플랫폼별 특징</h1>
+
+<p>공모전이나 조그마한 개인 프로젝트를 운영하면서 개인적으로 느낀 점입니다. Firebase는 사용 경험이 거의 없어서 적지 않았습니다.</p>
+
+<h2 id="aws-lambda">AWS Lambda</h2>
+
+<ul>
+<li>프로그래밍 언어별로 AWS SDK를 제공하여 AWS의 다른 서비스들과의 연동이 아주 좋다.</li>
+<li>서버리스 플랫폼중에서 가장 인기가 많다보니 관련 자료나 Q&amp;A가 풍부하다.</li>
+<li>Azure와는 달리 SSL/TLS 인증서가 무료로 제공된다.</li>
+<li>정확히는 모르겠지만 콜드스타트가 Azure Functions에 비해 좀 더 빠른것같다.</li>
+</ul>
+
+<h2 id="azure-functions">Azure Functions</h2>
+
+<ul>
+<li>Visual Studio Code와 궁합이 좋다.</li>
+<li><code>create-react-app</code>처럼 공식적으로 손쉬운 셋업 도구를 제공하여 구조(함수에 주어지는 파라미터 등)를 빨리 익힐 수 있다.</li>
+<li>운영체를 리눅스와 윈도우 중에서 선택할 수 있다. 근데 리눅스를 선택할 경우 제공되는 플랜 유형이 App Service(호스팅 시간에 따른 가격 책정)밖에 없다.</li>
+<li>도커 이미지로 배포가 가능하다. 근데 이럴 경우 운영체제를 리눅스밖에 선택할 수 없고, 때문에 App Service 요금으로 청구된다.</li>
+<li>또한 도커 컨테이너 배포가 아니더라도 런타임 스택이 파이썬이라면 리눅스밖에 선택할 수 없고, App Service 요금으로 청구된다.</li>
+<li>콘솔 UI가 AWS Lambda 보다 이쁘다.</li>
+</ul>
+
+<h1 id="서버리스의-한계">서버리스의 한계</h1>
+
+<p>서버리스는 매 호출 때마다 상태를 가지고 있지 않습니다. 때문에 세션 정보를 메모리에 저장하는 등 메모리 상에 상태를 가져야 하는 작업은 서버리스로 구축하는 것이 적합하지 않습니다.</p>
+
+<p>제가 한창 서버리스를 사용할 때 웹소켓 채팅 서버를 서버리스로 배포하려고 했었습니다. 그러나 웹소켓은 한 번의 핸드쉐이크로 클라이언트와의 연결 상태를 가지고 있어야하기 때문에, 서버리스를 포기하고 EC2로 배포한 경험이 있습니다.</p>
+
+<p>호출을 완료하고 나면 함수는 잠깐 동안의 대기 상태를 가진 후(AWS의 경우 대략 3~40분 정도) 완전히 내려갑니다. <a href="https://velopert.com/3577#%EC%A0%91%EC%86%8D%EC%A0%95%EB%B3%B4-%EC%9E%AC%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">이 잠깐의 대기시간을 이용하여 DB 접속 정보를 재사용한 예도 있습니다.</a></p>
+
+<h1 id="마무리">마무리</h1>
+
+<p>여태껏 저는 간단한 서비스 위주로 서버리스 아키텍처를 사용해 왔습니다. 앞으로 비교적 대규모 서비스를 개발할 때 마이크로서비스로 구현할 경우 각자의 함수를 독립적으로 테스트하고 실행하여 훨씬 용이한 개발이 가능할 것으로 기대됩니다. 다만 서버리스 아키텍처는 앞서 말한 여러 한계가 있기 때문에, 프로젝트에 사용할 기술 요구사항을 살펴본 후 어떤 아키텍처를 선택할 지 고민할 필요가 있다고 생각합니다.</p>
+
+<p>또한 앞서 말했듯이 Azure Functions의 경우 런타임에 따른 요금제 제약이 심하기 때문에 이또한 자세히 알아볼 필요가 있습니다.</p>
+
+<p>마지막으로, 개인적인 경험과 비교적 짧은 견해가 담긴 글이니 잘못된 부분이 있으면 댓글로 알려주시면 감사하겠습니다.</p>
+
+<h1 id="참고">참고</h1>
+
+<p><a href="https://dashbird.io/blog/can-we-solve-serverless-cold-starts/">https://dashbird.io/blog/can-we-solve-serverless-cold-starts/</a></p>
+
+<p><a href="https://velog.io/@jerrynim_/serverless-stack-%EC%86%8C%EA%B0%9C-69jyihmqxg">https://velog.io/@jerrynim_/serverless-stack-%EC%86%8C%EA%B0%9C-69jyihmqxg</a></p>
+
+<p><a href="https://velopert.com/3543">https://velopert.com/3543</a></p>
+
+            <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fyourssu-dev.github.io%2fpost%2fserverless-%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25EC%25B3%2590-%25EA%25B0%2584%25EB%258B%25A8-%25ED%259B%2584%25EA%25B8%25B0%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Serverless%20%ec%95%84%ed%82%a4%ed%85%8d%ec%b3%90%20%ea%b0%84%eb%8b%a8%20%ed%9b%84%ea%b8%b0&amp;url=https%3a%2f%2fyourssu-dev.github.io%2fpost%2fserverless-%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25EC%25B3%2590-%25EA%25B0%2584%25EB%258B%25A8-%25ED%259B%2584%25EA%25B8%25B0%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fyourssu-dev.github.io%2fpost%2fserverless-%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25EC%25B3%2590-%25EA%25B0%2584%25EB%258B%25A8-%25ED%259B%2584%25EA%25B8%25B0%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fyourssu-dev.github.io%2fpost%2fserverless-%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25EC%25B3%2590-%25EA%25B0%2584%25EB%258B%25A8-%25ED%259B%2584%25EA%25B8%25B0%2f&title=Serverless%20%ec%95%84%ed%82%a4%ed%85%8d%ec%b3%90%20%ea%b0%84%eb%8b%a8%20%ed%9b%84%ea%b8%b0" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+        </article>
+        <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://yourssu.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+    </main>
+    <aside class="author">
+  <img class="profile-image" src="https://yourssu-dev.github.io/img/profile-image.png" alt="유어슈" />
+  <p class="name">by 
+  <strong>유어슈</strong></p>
+  <p class="address">숭실대학교 커뮤니티 그라운드 런칭!</p>
+  <p class="link"></p>
+  <ul class="social">
+    
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/ground_yourssu" class="icon-instagram" target="_blank" title="Instagram"></a></li>
+
+
+
+
+
+
+
+<li><a href="//yourssu.com" class="icon-dribbble" target="_blank" title="hompage"></a></li>
+
+
+<li><a href="https://yourssu-dev.github.io/post/index.xml" class="icon-rss" target="_blank" title="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+</div>
+
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://yourssu-dev.github.io/post/index.xml" title="RSS"></a>
+        <p>&copy; 2019 &middot; Powered by <a href="http://gohugo.io">Hugo</a>.</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/yourssu-dev.github.io\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://yourssu-dev.github.io/js/plugins.js"></script>
+
+
+
+
+</body>
+</html>
+
