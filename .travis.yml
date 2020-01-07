@@ -3,7 +3,6 @@ install:
   - sudo dpkg -i hugo*.deb
   - hugo version
 script:
-  - hugo
   - ./shell_script.sh
 
 deploy:
