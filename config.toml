@@ -1,4 +1,4 @@
-baseurl = "https://yourssu-dev.github.io/"
+baseurl = "https://blog.yourssu.com/"
 languageCode = "ko"
 title = "Yourssu 기술 블로그"
 # Define how many pages appear per site
