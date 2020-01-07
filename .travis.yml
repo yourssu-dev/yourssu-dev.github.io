@@ -4,8 +4,6 @@ install:
   - hugo version
 script:
   - hugo
-
-preprocessing:
   - ./shell_script.sh
 
 deploy:
