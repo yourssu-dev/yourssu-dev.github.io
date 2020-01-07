@@ -1,12 +1,15 @@
 install:
-    - wget https://github.com/gohugoio/hugo/releases/download/v0.60.1/hugo_0.60.1_Linux-64bit.deb
-    - sudo dpkg -i hugo*.deb
-    - hugo version
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.60.1/hugo_0.60.1_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
+  - hugo version
 script:
   - hugo
 
+preprocessing:
+  - ./shell_script.sh
+
 deploy:
-  local_dir: public
+  local_dir: public # 배포될 폴더
   repo: yourssu-dev/yourssu-dev.github.io # 배포될 저장소
   target_branch: master
   provider: pages
@@ -14,25 +17,5 @@ deploy:
   github_token: $GITHUB_TOKEN # Travis CI 가 깃허브에 직접 업로드 하기위한 토큰
   email: yourssu.dev@gmail.com
   name: "yourssu-dev"
-  commit_message: "유어슈 블로그에 글을 업데이트 합니다..."
   on:
     branch: develop
-
-# git add -A
-# git status
-# git commit -m "Deleted A, B, C"
-# git push
-
-
-
-# deploy:
-#   local_dir: public # hugo 에서 기본 output폴더 명은 public 임으로 deploy 할 폴더를 public 으로 설정 해 놓는다
-#   repo: yourssu-dev/yourssu-dev.github.io # 배포될 저장소
-#   target_branch: master
-#   provider: pages
-#   skip_cleanup: true
-#   github_token: $GITHUB_TOKEN # Travis CI 가 깃허브에 직접 업로드 하기위한 토큰
-#   email: yourssu.dev@gmail.com
-#   name: "yourssu.dev"
-#   on:
-#     branch: master
