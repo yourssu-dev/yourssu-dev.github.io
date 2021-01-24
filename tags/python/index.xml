@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Yourssu 기술 블로그</title>
+    <link>https://blog.yourssu.com/tags/python/</link>
+    <description>Recent content in python on Yourssu 기술 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 09 Mar 2020 01:07:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://blog.yourssu.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>에브리타임 봇 제작기 - (1: 에타 크롤러)</title>
+      <link>https://blog.yourssu.com/post/everytime-bot-1/</link>
+      <pubDate>Mon, 09 Mar 2020 01:07:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/post/everytime-bot-1/</guid>
+      <description>에브리타임 봇 제작기 - (1: 에타 크롤러) 안녕하세요. 유어슈 0G 입니다.
+동아리 내에서는 대장 겸, 만능노예를 맡고있습니다.
+
+노예의 주 업무는 에브리타임에서 동아리 관련한 글에 답변을 다는 것입니다.
+그러나 하나하나 매일 찾고 대응하는 것 이 보통 일이 아니더라고요.
+그래서 생각했습니다.
+봇을 만들자!  
+기획/마케팅 출신인 제가 이 짓을 시작하게 된 계기는 심플합니다. 개발팀한테 만들어달라 했는데 아무도 관심을 안줬기 때문입니다. ( 황금같은 일요일을 쉽게 낭비하는 법 )
+ 
+봇의 기본적인 구조는 19년도 2월에 작성된 네이버 블로그글을 참고했습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

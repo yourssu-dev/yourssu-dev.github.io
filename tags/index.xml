@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Yourssu 기술 블로그</title>
+    <link>https://blog.yourssu.com/tags/</link>
+    <description>Recent content in Tags on Yourssu 기술 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sun, 24 Jan 2021 15:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://blog.yourssu.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git</title>
+      <link>https://blog.yourssu.com/tags/git/</link>
+      <pubDate>Sun, 24 Jan 2021 15:30:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>개발</title>
+      <link>https://blog.yourssu.com/tags/%EA%B0%9C%EB%B0%9C/</link>
+      <pubDate>Sun, 24 Jan 2021 15:30:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/%EA%B0%9C%EB%B0%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>초중급자</title>
+      <link>https://blog.yourssu.com/tags/%EC%B4%88%EC%A4%91%EA%B8%89%EC%9E%90/</link>
+      <pubDate>Sun, 24 Jan 2021 15:30:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/%EC%B4%88%EC%A4%91%EA%B8%89%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>협업</title>
+      <link>https://blog.yourssu.com/tags/%ED%98%91%EC%97%85/</link>
+      <pubDate>Sun, 24 Jan 2021 15:30:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/%ED%98%91%EC%97%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bot</title>
+      <link>https://blog.yourssu.com/tags/bot/</link>
+      <pubDate>Mon, 09 Mar 2020 01:07:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/bot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crawling</title>
+      <link>https://blog.yourssu.com/tags/crawling/</link>
+      <pubDate>Mon, 09 Mar 2020 01:07:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/crawling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://blog.yourssu.com/tags/python/</link>
+      <pubDate>Mon, 09 Mar 2020 01:07:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>에브리타임</title>
+      <link>https://blog.yourssu.com/tags/%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84/</link>
+      <pubDate>Mon, 09 Mar 2020 01:07:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://blog.yourssu.com/tags/android/</link>
+      <pubDate>Tue, 18 Feb 2020 23:30:30 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rxjava</title>
+      <link>https://blog.yourssu.com/tags/rxjava/</link>
+      <pubDate>Tue, 18 Feb 2020 23:30:30 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/rxjava/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>https://blog.yourssu.com/tags/ios/</link>
+      <pubDate>Sat, 07 Dec 2019 15:00:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dagger</title>
+      <link>https://blog.yourssu.com/tags/dagger/</link>
+      <pubDate>Sat, 07 Dec 2019 04:03:04 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/dagger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DI</title>
+      <link>https://blog.yourssu.com/tags/di/</link>
+      <pubDate>Sat, 07 Dec 2019 04:03:04 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/di/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud computing</title>
+      <link>https://blog.yourssu.com/tags/cloud-computing/</link>
+      <pubDate>Fri, 15 Nov 2019 01:28:41 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>https://blog.yourssu.com/tags/serverless/</link>
+      <pubDate>Fri, 15 Nov 2019 01:28:41 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/serverless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>서버리스</title>
+      <link>https://blog.yourssu.com/tags/%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4/</link>
+      <pubDate>Fri, 15 Nov 2019 01:28:41 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive</title>
+      <link>https://blog.yourssu.com/tags/reactive/</link>
+      <pubDate>Mon, 11 Nov 2019 15:31:24 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/reactive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Programming</title>
+      <link>https://blog.yourssu.com/tags/reactive-programming/</link>
+      <pubDate>Mon, 11 Nov 2019 15:31:24 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/reactive-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>리엑티브</title>
+      <link>https://blog.yourssu.com/tags/%EB%A6%AC%EC%97%91%ED%8B%B0%EB%B8%8C/</link>
+      <pubDate>Mon, 11 Nov 2019 15:31:24 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/%EB%A6%AC%EC%97%91%ED%8B%B0%EB%B8%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>태그를적어주세요</title>
+      <link>https://blog.yourssu.com/tags/%ED%83%9C%EA%B7%B8%EB%A5%BC%EC%A0%81%EC%96%B4%EC%A3%BC%EC%84%B8%EC%9A%94/</link>
+      <pubDate>Tue, 17 Sep 2019 20:35:04 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/tags/%ED%83%9C%EA%B7%B8%EB%A5%BC%EC%A0%81%EC%96%B4%EC%A3%BC%EC%84%B8%EC%9A%94/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

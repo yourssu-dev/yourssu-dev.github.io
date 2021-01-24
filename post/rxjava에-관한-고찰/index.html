@@ -1,0 +1,270 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Yourssu 기술 블로그</title>
+        <meta name="author">
+        <meta name="description" content="Yourssu Development blog ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="Hugo 0.60.1" />
+        
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.yourssu.com/css/styles.css">
+        <link rel="icon" href="https://blog.yourssu.com/favicon.ico">
+        <link rel="apple-touch-icon" href="https://blog.yourssu.com/apple-touch-icon.png" />
+        <link rel="stylesheet" href="https://blog.yourssu.com/css/highlightjs/monokai.css">
+        <script src="https://blog.yourssu.com/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+        <style>
+        .site-header h2 .logo {
+        background: url(https://blog.yourssu.com/img/desk.jpg) no-repeat 0 0;
+        }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .site-header h2 .logo {
+            background-image: url(https://blog.yourssu.com/img/desk.jpg);
+        }}
+       .site-header {
+         background: #2a373d url(https://blog.yourssu.com/img/desk.jpg) no-repeat center center;
+         z-index: -1;
+        }
+        </style>
+    </head>
+    <body>
+        
+        
+        <header class="site-header">
+          <div class="transparent-layer">
+              <a href="https://blog.yourssu.com/"><img src= "https://blog.yourssu.com/img/LOGO.png" alt="LOGO" class = "Logo_img"></a>
+          </div>
+        </header>
+
+<div class="container clearfix">
+    <main role="main" class="content">
+        <article class="post">
+            <a class="btn home" href="https://blog.yourssu.com/" title="돌아가기">&laquo; 돌아가기</a>
+            
+<h1><a href="https://blog.yourssu.com/post/rxjava%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%B0%B0/" title="Rxjava에 관한 고찰">Rxjava에 관한 고찰</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2020.02.18">2020.02.18</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.yourssu.com/tags/rxjava">rxjava</a>, 
+        
+        <a href="https://blog.yourssu.com/tags/android">android</a>
+        
+    
+
+</span>
+</footer>
+
+            <p>안녕하세요 유어슈에서 안드로이드 개발을 맡고 있는 박정현입니다</p>
+<p>오늘은 요즘 많이 사용되고 있는 반응형 프로그래밍에 대해 알아볼까 합니다</p>
+<p>반응형 프로그래밍이란 기존의 명령형 방식이 아닌 데이터의 흐름에 따라 동작하게 되는 프로그래밍 기법입니다</p>
+<p>안드로이드에서 이를 위해서 가장 많이 사용하는 것이 Rxjava(reactive java) 즉 반응형 프로그래밍을 위한 라이브러리의 일종입니다</p>
+<p>때문에 Rxjava에 대해서, 그 중에서도 Observable 객체와 관련된 객체들 그리고 몇가지 연산자에 대한 글을 작성해 보려고 합니다</p>
+<br/>
+<p>Rxjava에서 반응형 프로그래밍을 하기 위해선 기본적으로 Observable 객체를 생성하고 이를 구독하게 되면
+그 순간부터 데이터가 배출되기 시작해 미리 지정해둔 코드를 실행하게 됩니다
+(Hot Observable과 cold Observable 에 대해서는 이 포스트에서 다루지 않습니다)</p>
+<p><br/><br/></p>
+<h2 id="observable">Observable</h2>
+<p>우선 기본적인 Observable을 만들어 보겠습니다</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> test = Observable.just(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>)
+</code></pre></div><p>just는 Observable을 생성하는 기본 연산자 입니다</p>
+<p>item이 1,2,3,4가 등록되어 있군요</p>
+<p>자 그럼 구독을 한번 해보겠습니다</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">test
+        .observeOn(Schedulers.io())
+        .subscribe {
+            Timber.d(<span style="color:#e6db74">&#34;$it&#34;</span>)
+        }
+</code></pre></div><p>observeOn 이 연산자는 구독후 배출된 아이템에 대해서 어떤 스레드에서 처리할 것인지 정해주는 역할을 합니다</p>
+<p>저는 비동기로 처리하기 위해서 <code>Schedulers.io()</code>에 할당하겠습니다</p>
+<p>그리고 subscribe를 통해 동작을 지정해줍니다</p>
+<p>자 이렇게 하고 실행을 한다면 Observable 객체는 1,2,3,4 각각의 아이템을 배출하게 되고 이는 비동기로 처리되어 로그를 출력하게 됩니다
+(Timber는 로그를 쉽게 출력할 수 있도록 도와주는 라이브러리 입니다)</p>
+<p><br/><br/></p>
+<p>일단 여기까지만 본다면 가장 기본적인 Observable의 사용법에 대해 알아봤다고 할 수 있을것 같습니다</p>
+<p>하지만 제가 이 포스트를 통해 말하고 싶었던건 Observable 객체 이외에 Flowable Single Maybe Completable 객체에 관한 내용입니다</p>
+<p>일단 언급한 4개의 객체 모두 기본적으론 Observable과 같은 역할을 하는 객체들입니다 그리고 Rxjava2에서 나온 개념이기도 하죠</p>
+<p>이제부터 어떤 차이가 있는지 알아보도록 하겠습니다</p>
+<h2 id="flowable">Flowable</h2>
+<p>Flowable은 기능만 두고 보자면 정말 Observable과 같지만 어찌 보면 Rxjava2가 나오게 된 이유라고도 할 수 있을거 같습니다</p>
+<h3 id="observable-">Observable의 한계</h3>
+<p>기존의 Observable은 너무 많은 아이템을 배출하면서 로직이 복잡하지면 처리속도가 배출속도를 따라가지 못해 out of memory가 발생할 수 있습니다
+이러한 개념을 배압이라고 하는데요</p>
+<br/>
+<p>이 배압을 해결하기 위해 나온것이 Flowable 입니다 Flowable은 배압이 발생할때 배압에 대한 처리를 할수 있는 메소드가 존재하고
+버퍼를 사용해 관리할 수 있게 됩니다</p>
+<p>아래는 둘 중 어느 객체를 선택해야 되나에 대한 기준입니다</p>
+<h4 id="observable1">Observable</h4>
+<ol>
+<li>
+<p>최대 1000개 미만의 데이터 흐름, Out of Memory Exception 이 발생할 확률이 적은 경우</p>
+</li>
+<li>
+<p>마우스, 터치 이벤트를 다루는 GUI 프로그래밍, 초당 1000회 이하의 이벤트를 다룸</p>
+</li>
+</ol>
+<h4 id="flowable1">Flowable</h4>
+<ol>
+<li>
+<p>10000개 이상의 데이터를 처리하는 경우, 메서드 체인에서 데이터 소스에 데이터 개수 제한을 요청해야 함</p>
+</li>
+<li>
+<p>디스크에서 파일을 읽어 들일 경우</p>
+</li>
+<li>
+<p>JDBC를 활용해 데이터베이스의 쿼리 결과를 가져오는 경우</p>
+</li>
+<li>
+<p>네트워크 I/O를 실행하는 경우 ( 서버에서 가져오길 원하는 만큼의 데이터양을 요청할 수 있을 때 )</p>
+</li>
+</ol>
+<br/>
+<h2 id="single">Single</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> test = Single.just(<span style="color:#ae81ff">1</span>)
+
+test
+        .observeOn(Schedulers.io())
+        .subscribe { t -&gt;
+            Timber.d(<span style="color:#e6db74">&#34;$t&#34;</span>)
+        }
+</code></pre></div><p>Single은 하나의 아이템만 배출하도록 강제한 객체입니다 이 특성을 활용해서 네트워크 로직의 데이터를 가져올때 주로 사용합니다
+서버 응답은 보통 하나인 경우가 많기 때문입니다</p>
+<br/>
+<h2 id="maybe">Maybe</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> test = Maybe.fromCallable { <span style="color:#66d9ef">null</span> }
+
+test
+        .observeOn(Schedulers.io())
+        .subscribe { t -&gt;
+            Timber.d(<span style="color:#e6db74">&#34;$t&#34;</span>)
+        }
+</code></pre></div><p>Maybe는 Single과 마찬가지로 하나의 아이템만 배출하도록 강제한 객체이지만 값이 없는 경우에 데이터 발행 없이 완료가 가능합니다</p>
+<br/>
+<h2 id="completable">Completable</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> test = Completable.fromAction { <span style="color:#75715e">/*function*/</span> }
+
+test
+        .observeOn(Schedulers.io())
+        .subscribe {
+            <span style="color:#75715e">// next function
+</span><span style="color:#75715e"></span>        }
+</code></pre></div><p>Completable은 아이템이 배출되어도 반환값이 없는 동작을 수행할때 사용하게 됩니다</p>
+<p><br/><br/></p>
+<h2 id="heading"></h2>
+<p>이상으로 Rxjava에서 사용되는 객체에 대해 알아봤는데요 Observable만 써도 구현 가능한 부분이 많지만
+Rx를 시작할 때라도 이런 객체가 있다라는 것을 인지하고 적절하게 사용하도록 노력한다면 좋은 공부가 될거라 생각합니다</p>
+<p>추가로 Rx에 대한 몇가지 연산자를 더 알아보겠습니다</p>
+<p>많은 연산자가 있지만 제가 오늘 소개시켜 드리고 싶은 건</p>
+<p>FlatMap, SwitchMap, ConcatMap 이 세가지에 대해서 비교해 보겠습니다</p>
+<br/>
+<h2 id="flatmap">FlatMap</h2>
+<p>우선 FlatMap은 배출된 아이템들을 다른 형태로 변환하여 다시 Observable의 형태로 반환하는 연산자 입니다
+각각의 아이템에 대해서 어떠한 연산이 필요할 때 많이 사용합니다</p>
+<h2 id="switchmap">SwitchMap</h2>
+<p>SwitchMap은 아이템이 배출될 때 배출된 아이템에 대해 지정해둔 로직을 처리하다 새로운 아이템이 배출된다면 기존의 작업을 중단하고
+새로운 아이템에 대해서 다시 로직을 수행합니다 이러한 특성때문에 결과물은 항상 하나의 아이템만 나오게 되고 이를 가장 대표적으로 활용하는
+부분은 아마 실시간 검색이 아닐까 생각합니다</p>
+<h2 id="concatmap">ConcatMap</h2>
+<p>아마 위의 설명을 보고 FlatMap을 사용해 본 사람이라면 그리고 비동기로 처리해본 사람이라면 기본적으로 아이템 배출에 관해서 순서대로 처리하지
+않는다는것을 알게 될겁니다 ConcatMap은 이러한 문제를 해결하고자 이전 아이템에 대한 로직이 수행중이라면 새로운 아이템이 배출되어도 대기하고 있다
+로직을 수행합니다 이러한 특성은 순서를 보장해주지만 어찌 보면 multicasting의 의미를 잃어버려 시간소요가 길어지게 됩니다</p>
+<br/>
+<h1 id="heading1">정리</h1>
+<p>오늘은 Rxjava를 사용하면서 잊어버릴수 있는 기본개념에 대해서 정리해 보았습니다 어쩌다 보니 고찰이라기 보단 정리가 되어버렸네요
+하지만 그만큼 중요한 개념이고 정리해두어서 손해볼게 없는 부분이라고 생각합니다 이 글을 보는 모든 분들께 도움이 되면 좋겠습니다 ㅎㅎ</p>
+
+            <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.yourssu.com%2fpost%2frxjava%25EC%2597%2590-%25EA%25B4%2580%25ED%2595%259C-%25EA%25B3%25A0%25EC%25B0%25B0%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Rxjava%ec%97%90%20%ea%b4%80%ed%95%9c%20%ea%b3%a0%ec%b0%b0&amp;url=https%3a%2f%2fblog.yourssu.com%2fpost%2frxjava%25EC%2597%2590-%25EA%25B4%2580%25ED%2595%259C-%25EA%25B3%25A0%25EC%25B0%25B0%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fblog.yourssu.com%2fpost%2frxjava%25EC%2597%2590-%25EA%25B4%2580%25ED%2595%259C-%25EA%25B3%25A0%25EC%25B0%25B0%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.yourssu.com%2fpost%2frxjava%25EC%2597%2590-%25EA%25B4%2580%25ED%2595%259C-%25EA%25B3%25A0%25EC%25B0%25B0%2f&title=Rxjava%ec%97%90%20%ea%b4%80%ed%95%9c%20%ea%b3%a0%ec%b0%b0" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+        </article>
+        <div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://yourssu.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+    </main>
+    <aside class="author">
+  <img class="profile-image" src="https://blog.yourssu.com/img/profile-image.png" alt="유어슈" />
+  <p class="name">by 
+  <strong>유어슈</strong></p>
+  <p class="address">숭실대학교 커뮤니티 그라운드 런칭!</p>
+  <p class="link"></p>
+  <ul class="social">
+    
+
+
+
+
+
+
+
+
+
+
+<li><a href="//instagram.com/ground_yourssu" class="icon-instagram" target="_blank" title="Instagram"></a></li>
+
+
+
+
+
+
+
+<li><a href="//yourssu.com" class="icon-dribbble" target="_blank" title="hompage"></a></li>
+
+
+<li><a href="https://blog.yourssu.com/post/index.xml" class="icon-rss" target="_blank" title="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+</div>
+
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.yourssu.com/post/index.xml" title="RSS"></a>
+        <p>&copy; 2021 &middot; Powered by <a href="http://gohugo.io">Hugo</a>.</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.yourssu.com\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.yourssu.com/js/plugins.js"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Yourssu 기술 블로그</title>
+    <link>https://blog.yourssu.com/categories/</link>
+    <description>Recent content in Categories on Yourssu 기술 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sun, 24 Jan 2021 15:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://blog.yourssu.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git</title>
+      <link>https://blog.yourssu.com/categories/git/</link>
+      <pubDate>Sun, 24 Jan 2021 15:30:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dev</title>
+      <link>https://blog.yourssu.com/categories/dev/</link>
+      <pubDate>Mon, 09 Mar 2020 01:07:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/categories/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>develop</title>
+      <link>https://blog.yourssu.com/categories/develop/</link>
+      <pubDate>Tue, 18 Feb 2020 23:30:30 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/categories/develop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Category</title>
+      <link>https://blog.yourssu.com/categories/category/</link>
+      <pubDate>Sat, 07 Dec 2019 15:00:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/categories/category/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://blog.yourssu.com/categories/android/</link>
+      <pubDate>Sat, 07 Dec 2019 04:03:04 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/categories/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>https://blog.yourssu.com/categories/ios/</link>
+      <pubDate>Sun, 17 Nov 2019 01:10:26 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/categories/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serverless architecture</title>
+      <link>https://blog.yourssu.com/categories/serverless-architecture/</link>
+      <pubDate>Fri, 15 Nov 2019 01:28:41 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/categories/serverless-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reactive Programming</title>
+      <link>https://blog.yourssu.com/categories/reactive-programming/</link>
+      <pubDate>Mon, 11 Nov 2019 15:31:24 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/categories/reactive-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>All</title>
+      <link>https://blog.yourssu.com/categories/all/</link>
+      <pubDate>Tue, 17 Sep 2019 20:35:04 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/categories/all/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

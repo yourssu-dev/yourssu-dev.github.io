@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>협업 on Yourssu 기술 블로그</title>
+    <link>https://blog.yourssu.com/tags/%ED%98%91%EC%97%85/</link>
+    <description>Recent content in 협업 on Yourssu 기술 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Sun, 24 Jan 2021 15:30:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://blog.yourssu.com/tags/%ED%98%91%EC%97%85/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git 으로 협업을 시작하자 - 초중급자용</title>
+      <link>https://blog.yourssu.com/post/git-%EC%9C%BC%EB%A1%9C-%ED%98%91%EC%97%85%EC%9D%84-%EC%8B%9C%EC%9E%91%ED%95%98%EC%9E%90-%EC%B4%88%EC%A4%91%EA%B8%89%EC%9E%90%EC%9A%A9/</link>
+      <pubDate>Sun, 24 Jan 2021 15:30:00 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/post/git-%EC%9C%BC%EB%A1%9C-%ED%98%91%EC%97%85%EC%9D%84-%EC%8B%9C%EC%9E%91%ED%95%98%EC%9E%90-%EC%B4%88%EC%A4%91%EA%B8%89%EC%9E%90%EC%9A%A9/</guid>
+      <description>서론 안녕하세요 오랜만에 돌아온 유어슈의 안드로이드 개발자 박정현입니다.  오늘은 깃에 대해서 이야기 해볼까 합니다.
+이런 말을 하면 &amp;lsquo;갑자기 왠 git?? 그건 당연히 개발하려면 알아야 하는거 아닙니까?&amp;rsquo; 라는 분도 계실거 같아요. 이 글을 쓰기 시작한 이유부터 말씀드려야 할거 같군요.
+유어슈는 대학교 동아리에서 운영되는 단체입니다. 일부 몇명을 제외하고는 당연히 사람이 빨리 빠지고 다시 들어오는 구조입니다 즉 교체가 자주 됩니다. 즉 빠르게 배우고 빠르게 협업해야 합니다! 근데 대학생이잖아요&amp;hellip;. 솔직히 깃 시스템에 대해서 얼마나 알고 들어올까요?</description>
+    </item>
+    
+  </channel>
+</rss>

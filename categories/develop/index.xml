@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>develop on Yourssu 기술 블로그</title>
+    <link>https://blog.yourssu.com/categories/develop/</link>
+    <description>Recent content in develop on Yourssu 기술 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 18 Feb 2020 23:30:30 +0900</lastBuildDate>
+    
+	<atom:link href="https://blog.yourssu.com/categories/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rxjava에 관한 고찰</title>
+      <link>https://blog.yourssu.com/post/rxjava%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%B0%B0/</link>
+      <pubDate>Tue, 18 Feb 2020 23:30:30 +0900</pubDate>
+      
+      <guid>https://blog.yourssu.com/post/rxjava%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%B0%B0/</guid>
+      <description>안녕하세요 유어슈에서 안드로이드 개발을 맡고 있는 박정현입니다
+오늘은 요즘 많이 사용되고 있는 반응형 프로그래밍에 대해 알아볼까 합니다
+반응형 프로그래밍이란 기존의 명령형 방식이 아닌 데이터의 흐름에 따라 동작하게 되는 프로그래밍 기법입니다
+안드로이드에서 이를 위해서 가장 많이 사용하는 것이 Rxjava(reactive java) 즉 반응형 프로그래밍을 위한 라이브러리의 일종입니다
+때문에 Rxjava에 대해서, 그 중에서도 Observable 객체와 관련된 객체들 그리고 몇가지 연산자에 대한 글을 작성해 보려고 합니다
+ Rxjava에서 반응형 프로그래밍을 하기 위해선 기본적으로 Observable 객체를 생성하고 이를 구독하게 되면 그 순간부터 데이터가 배출되기 시작해 미리 지정해둔 코드를 실행하게 됩니다 (Hot Observable과 cold Observable 에 대해서는 이 포스트에서 다루지 않습니다)</description>
+    </item>
+    
+  </channel>
+</rss>
